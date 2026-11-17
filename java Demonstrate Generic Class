@@ -1,0 +1,23 @@
+class Box<T> {
+    T value;
+
+    void setValue(T v) {
+        value = v;
+    }
+
+    void display() {
+        System.out.println("Value: " + value);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Box<Integer> b = new Box<>();
+        b.setValue(100);
+        b.display();
+
+        Box<String> s = new Box<>();
+        s.setValue("Java");
+        s.display();
+    }
+}
