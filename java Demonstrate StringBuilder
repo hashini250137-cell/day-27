@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        StringBuilder s = new StringBuilder("Java");
+
+        s.append(" Programming");
+
+        System.out.println("After Append: " + s);
+
+        s.insert(4, " Language");
+
+        System.out.println("After Insert: " + s);
+
+        s.delete(4, 13);
+
+        System.out.println("After Delete: " + s);
+    }
+}
